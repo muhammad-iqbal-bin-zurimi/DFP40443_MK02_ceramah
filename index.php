@@ -15,6 +15,7 @@
     <p><b>Jawatan:</b> Pensyarah</p>
     <p><b>Institusi:</b> Politeknik Tuanku Syed Sirajuddin</p>
     <p><b>Bidang Kepakaran:</b> Teknologi Maklumat (Pangkalan Data)</p>
+    <p><b>Hubungi:</b> masguieta@ptss.edu.my</p>
 </section>
 
 <section>
@@ -40,7 +41,7 @@
         <input type="email" name="email" required>
 
         <label>No Telefon</label>
-        <input type="tel" name="telefon" required>
+        <input type="text" name="telefon" required>
 
         <label>Kategori Peserta</label>
         <select name="kategori" required>
