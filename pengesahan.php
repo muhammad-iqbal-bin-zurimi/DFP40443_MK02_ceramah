@@ -18,9 +18,9 @@ $yuran      = "RM 500.00";
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-<meta charset="UTF-8">
-<title>Pengesahan Pendaftaran</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Pengesahan Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section>
@@ -28,21 +28,59 @@ $yuran      = "RM 500.00";
     <div class="card">
         <img src="penceramah.jpg" alt="Penceramah" class="penceramah">
         <h3>Maklumat Ceramah</h3>
-        <p><b>Penceramah:</b> <?= $penceramah ?></p>
-        <p><b>Tarikh:</b> <?= $tarikh ?></p>
-        <p><b>Masa:</b> <?= $masa ?></p>
-        <p><b>Lokasi:</b> <?= $lokasi ?></p>
-        <p><b>Yuran:</b> <?= $yuran ?></p>
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td><b>Penceramah:</b></td>
+                <td><?= $penceramah ?></td>
+            </tr>
+            <tr>
+                <td><b>Tarikh:</b></td>
+                <td><?= $tarikh ?></td>
+            </tr>
+            <tr>
+                <td><b>Masa:</b></td>
+                <td><?= $masa ?></td>
+            </tr>
+            <tr>
+                <td><b>Lokasi:</b></td>
+                <td><?= $lokasi ?></td>
+            </tr>
+            <tr>
+                <td><b>Yuran:</b></td>
+                <td><?= $yuran ?></td>
+            </tr>
+        </table>
         <hr>
-        <p><b>Nama:</b> <?= htmlspecialchars($nama) ?></p>
-        <p><b>Email:</b> <?= htmlspecialchars($email) ?></p>
-        <p><b>No Telefon:</b> <?= htmlspecialchars($telefon) ?></p>
-        <p><b>Kategori Peserta:</b> <?= htmlspecialchars($kategori) ?></p>
-        <p><b>Bilangan Slot:</b> <?= htmlspecialchars($slot) ?></p>
-        <p><b>Harga Seunit:</b> RM <?= $harga ?></p>
+        <h3>Maklumat Peserta</h3>
+        <table>
+            <tr>
+                <td><b>Nama:</b></td>
+                <td><?= htmlspecialchars($nama) ?></td>
+            </tr>
+            <tr>
+                <td><b>Email:</b></td>
+                <td><?= htmlspecialchars($email) ?></td>
+            </tr>
+            <tr>
+                <td><b>No Telefon:</b></td>
+                <td><?= htmlspecialchars($telefon) ?></td>
+            </tr>
+            <tr>
+                <td><b>Kategori Peserta:</b></td>
+                <td><?= htmlspecialchars($kategori) ?></td>
+            </tr>
+            <tr>
+                <td><b>Bilangan Slot:</b></td>
+                <td><?= htmlspecialchars($slot) ?></td>
+            </tr>
+            <tr>
+                <td><b>Harga Seunit:</b></td>
+                <td>RM <?= $harga ?></td>
+            </tr>
+        </table>
         <hr>
         <h3>Jumlah Bayaran: RM <?= $jumlah ?></h3>
-        <p>Status: Pendaftaran Berjaya ✅</p>
+        <p>Status: Pendaftaran Berjaya</p>
     </div>
     <a href="index.php"><button type="button">Isi Borang Baharu</button></a>
 </section>
